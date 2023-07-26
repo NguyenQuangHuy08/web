@@ -1,0 +1,255 @@
+.dinh_dang{
+
+     margin: 20px 0px
+
+
+}
+
+.dinh_dang label{
+
+     font-weight: bold;
+     font-variant: small-caps;
+
+
+}
+
+label{
+    
+    margin: 30px;
+
+
+}
+
+
+
+
+.bentrai{
+   
+   position: relative;
+   left: 10%;
+   min-height: 600px;
+   width: 90%;
+ 
+
+}
+
+.banner{
+
+
+    width: 100% ;
+   
+    
+}
+
+
+
+
+.khung{
+    
+   width: 200px;
+   float: left;
+   border: 1px solid none;
+   margin: 2px;
+   overflow: hidden;
+   
+   
+}
+
+.khung > .anh > img {
+
+   width: 100%;
+  
+
+}
+
+.anh > img:hover{
+
+     border-radius: 20px 20px 20px;
+    
+}
+
+.image{
+
+    min-height: 100px;
+    float: left;
+
+
+}
+
+.image> img { 
+
+      width: 300px;
+   
+
+}
+
+.phanbentrai{
+
+   float: left;
+   min-height: 100px;
+   width: 20%;
+
+}
+
+
+.anhben{
+
+   
+   float: right;
+   width: 80%;
+ 
+}
+
+.anhben > .anhchan{
+
+    width: 100% ;
+    height: 500px;
+
+
+}
+
+.thietke{
+
+    border: 1px solid red;
+
+}
+
+/* 
+.codinh{
+      
+    overflow: hidden;
+     position: fixed;
+    top: 0;
+    width: 100%;
+
+
+} */
+
+
+
+.column{
+
+    width: 20%;
+    float: left;
+    padding-left: 135px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    
+    
+    }
+    
+    .sanpham{
+    
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px purple;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
+    
+    }
+    
+    .sanpham:hover{
+    
+    background-color: white;
+    color: orchid;
+    box-shadow: 10px 10px 10px pink;
+    transform: matrix3d(5deg);
+    
+    }
+    
+    
+    .sanpham img{
+    
+    width: 100%;
+    
+    
+    }
+    .sanpham>.gia{
+    
+    padding-top: 20px;
+    
+    
+    
+    }
+    
+    /* ----------------------- */
+    
+    
+    .sanphamm{
+    
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px purple;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    overflow: hidden;
+    
+    }
+    
+    .sanphamm:hover{
+    
+    background-color: green;
+    color: orchid;
+    box-shadow: 10px 10px 10px pink;
+    transform: rotate(10deg);
+    transform: skew(20deg); 
+    transform: scale(-1deg);
+    transform: perspective(10deg);
+    
+    
+    }
+    
+    
+    .sanphamm img{
+    
+    width: 100%;
+    
+    
+    }
+    .sanphamm>.gia{
+    
+    padding-top: 20px;
+    
+    
+    
+    }
+    
+    
+    .gia{
+    
+       color: red;
+       font-size: 20px;
+       font-weight: bold;
+    
+    
+    }
+    
+    .tanggiam{
+
+      border: 1px solid none;
+      margin: 20px;
+      text-align: center;
+      
+    }
+
+    .giohang >a > img{
+
+        width: 30px;
+
+    }
+
+    .phongto{
+
+      width: 100%;
+      height: 300px;
+    }
+
+    p{
+
+     font-size: 20px;
+     color: black;
+     font-weight: bold;
+
+
+    }

@@ -1,0 +1,135 @@
+
+.menu{
+
+    padding: 0px;
+    margin: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px orangered;
+    list-style: none;
+    background-color: yellow;
+    height: 40px;
+    max-width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.menu>li{
+
+   display: inline-block;
+  
+
+}
+
+.menu>li>a{
+
+    display: block;
+    line-height: 40px;
+    padding: 0 40px;
+    text-decoration: none;
+  
+
+}
+
+
+.menu>li>a:hover{
+ 
+    color: blue;
+  
+  
+  }
+
+  .menu >li{
+
+    position: relative;
+ 
+ }
+ 
+ .menu ul{
+ 
+    width: 170px;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    background-color: white;
+    font-variant: small-caps;
+    text-align: left;
+    border-radius: 3px;
+ 
+    box-shadow: 0 0 1px gray;
+ 
+    position: absolute;
+    display: none;
+ 
+ }
+ 
+ .menu>li:hover>ul{
+ 
+     display: block;
+ 
+ }
+ 
+ .menu ul>li>a{
+ 
+     display: block;
+     line-height: 30px;
+     color: greenyellow;
+     text-decoration: none;
+     padding: 0 5px;
+     border-bottom: 1px dotted lightgray;
+ 
+ 
+ }
+ 
+ .menu ul>li>a:hover{
+ 
+     color: white;
+     background-color: orangered;
+ 
+ }
+
+
+
+
+.home{
+
+     position: absolute;
+     right: 5px;
+     top:220px;
+     overflow: hidden;
+     
+   
+}   
+
+.timkiem{
+
+    width: 250px;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+ 
+}
+
+.button{
+
+    overflow: hidden;
+
+}
+
+.home > button{
+ 
+    height:35px;
+
+}
+
+
+
+.nav{
+
+     
+    clear: both;
+    border: 1px solid red;
+
+}
+
+

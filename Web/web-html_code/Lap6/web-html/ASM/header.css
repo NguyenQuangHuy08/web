@@ -1,0 +1,100 @@
+
+
+
+.header{
+   
+     min-height: 200px ; 
+   
+   
+    
+
+}
+
+
+
+.header>*{
+
+    border: 1px solid none;
+    
+
+}
+
+.header{
+
+
+    border-radius: 0px;
+    position: relative;
+    width: 100%;
+
+
+}
+
+.header>.giua{
+
+    position: absolute;
+    top: 10%;
+    right: 60%;
+    overflow: hidden;
+
+}
+
+
+.header>.dau{
+
+ 
+     border-radius: 200px;
+     width: 200px;
+     padding-top: 10px;
+     overflow: hidden;
+     padding-left: 10px;
+     padding-bottom: 5px;
+   
+
+}
+
+.dau>img{
+
+    width: 100%;
+    border-radius: 100px;
+    overflow: hidden;
+    
+
+}
+
+.header>.cuoi{
+    
+    position: absolute;
+    top: 65%;
+    right: 22%;
+    overflow: hidden;
+   
+
+}
+
+.cuoi{
+
+   color: royalblue;
+
+}
+
+.header>.diachi{
+
+   position:absolute;
+   top: 70%;
+   right:0%;
+    
+
+}
+
+
+
+
+.header{
+
+   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Tzs-Q5Bdo3tY_sqYB2NUA7qRAJgnNg_ArxbMY1WD16P5m1XOr_I_T4w2FNXTgI_PnEo&usqp=CAU");
+   background-repeat: no-repeat;
+   background-size: 100%;
+   
+   
+}
+

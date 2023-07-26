@@ -1,0 +1,67 @@
+
+footer{
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-height: 50px;
+    background-color: yellow;
+    clear: both;
+    text-align: center;
+    line-height: 15px;
+  
+ }
+ 
+ footer:hover{
+ 
+     color: aqua;
+      text-shadow: 10px 10px 10px red;
+ 
+ }
+ 
+ 
+ 
+ 
+ /* -------------------------------------------------------- */
+ 
+ 
+ h2{
+ 
+     color: red;
+ 
+   }
+ 
+   a{
+ 
+    text-decoration: none;
+ 
+   }
+   
+   .center{
+ 
+    text-align: center;
+    padding-bottom: 10px;
+ 
+   }
+ 
+ .huynguyen{
+ 
+     clear: both; 
+     padding-top: 20px;
+     padding-left: 70px;
+     background-color: blanchedalmond;
+     overflow: hidden;
+     font-weight: bold;
+     font-size: 16px;
+ 
+ }
+ 
+ 
+ audio{
+  
+     overflow: hidden;
+ 
+ 
+ }
+ 
+ 
+ 

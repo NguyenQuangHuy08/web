@@ -1,0 +1,77 @@
+
+h1{
+
+     padding-left: 65%;
+       
+}
+
+.huy1{
+
+      float: left;
+
+}
+
+.h1{
+
+   padding-left: 73%;
+
+}
+
+body{
+
+
+    background-image: url();
+    background-size: 100% ;
+    background-color:white;
+    padding-left: 10%;
+    padding-right: 10%;
+  
+  
+ }
+
+.C6{
+
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 20px;
+
+
+    
+}
+
+h1{
+
+    font-size:30px;
+    font-family: Times New Roman;
+    color: red;
+    
+
+}
+
+
+.C6 > a:visited{
+
+    color:black;
+
+}
+
+.C6 > a:active{
+
+    color: green;
+
+}
+
+
+.C6 > a:hover{
+
+   color : red;
+   text-decoration: underline;
+  
+}
+
+.C6 > a:link{
+
+   color : green;
+
+}

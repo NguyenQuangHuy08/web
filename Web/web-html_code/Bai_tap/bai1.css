@@ -1,0 +1,41 @@
+header{
+    background-color: #CB7802;
+}
+.menu{
+    line-height: 35px;
+    background-color: #272F53;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.menu a{
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.menu1{
+    
+    position:absolute;
+    top: 4px;
+    right: 0px;
+    display: flex;
+}
+.menu{
+    
+    display: flex;
+}
+.anh img{
+    margin-top: 5px;
+    width: 100%;
+}
+.menu2{
+    width: 250px;
+    padding-right: 10px;
+}
+.menu3{
+    background-color:#272F53 ;
+    border: 2px solid white;
+    color: white;
+    margin: 10px;
+}

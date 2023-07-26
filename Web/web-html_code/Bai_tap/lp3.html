@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lap 3</title>
+    <link href="asm.css" rel="stylesheet">
+    <link href="header.css" rel="stylesheet">
+    <link href="nav.css" rel="stylesheet">
+    <link href="arrticle.css" rel="stylesheet">
+    <link href="aside.css" rel="stylesheet">
+    <link href="footer.css" rel="stylesheet">
+    
+
+
+</head>
+<body>
+
+<!--  thằng bố------------------------------ -->
+
+  <div class="container" >
+
+
+
+
+
+
+
+
+
+
+   <div class="header">
+
+        <img src="Ảnh/logo-removebg-preview.png" >
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+   <div class="nav">
+        <nav>
+
+      
+            <ul class="menu">
+
+                    <li><a href="#">Trang chủ </a></li>
+                    <li><a href="thongtin.html">Thông tin</a></li>
+                    <li><a href="#">Sản phẩm </a>
+                    
+                                           
+                        <ul>
+
+                            <li><a href="bombor1.html">Áo bomber</a></li>
+                            <li><a href="aosomi1.html">Áo sơ mi</a></li>
+                            <li><a href="quanau1.html">Quần âu </a></li>
+                            <li><a href="giay1.html">Giầy sneaker</a></li>
+                        
+                                 
+                        </ul>
+                    
+                    
+                    </li>
+                    <li><a href="hotdel.html">Hot Deal </a></li>
+                    <li><a href="#">Khuyến mãi  </a></li>
+                   
+                
+
+            </ul>
+            
+      
+           <div class="home">
+               <input class="timkiem">
+               <button>
+
+                    Tìm kiếm
+
+               </button>
+           </div>
+            
+       
+
+        </nav>
+   </div>
+
+
+
+
+
+
+
+
+
+<!-- phần nội dung article --------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+   <div class="article">
+
+    <div class="gr"></div>
+   
+
+
+<div class="tungbung">
+    <marquee>
+
+        <div style="font-size: 30px; font-weight: bold;color: red; padding-top: 10px;">Tưng bừng chào đón xuân Tân Sửu 2022</div>
+     
+
+    </marquee>
+    <marquee style="font-size: 20px; font-weight: bold;color: purple; padding-top: 10px;"> 
+
+        <div>    Huy Store ưu đãi giảm giá cùng nhiều quà tặng hấp dẫn !</div>
+
+    </marquee>
+
+</div> 
+
+    <div class="image">
+    
+        <img id="img" onclick="
+        changeImage()" src="Ảnh/sale1.png" alt="" >
+  
+    </div>
+
+    <script>
+
+     var index = 1;
+
+     changeImage = function (){
+     
+         var imgs = ["Ảnh/sale1.png","Ảnh/sale2.png","Ảnh/sale3.png","Ảnh/sale4.png","Ảnh/sale5.png","Ảnh/sale6.png","Ảnh/sale7.png","Ảnh/sale8.png","Ảnh/sale9.png","Ảnh/sale5.png"];
+        
+         document.getElementById('img').src = imgs[index];
+    
+        index++;
+
+        if(index==10){
+
+           index=0;
+
+        }
+        
+     }
+
+
+    setInterval(changeImage ,1000)
+
+
+    </script>
+
+
+<!-- controls style="text-align: center;" để cho nhạc hiển thị  -->
+<!-- autoplay='true' -->
+
+    <br>
+    <br>
+
+<!-- 
+    <div class="huy3">
+     <audio autoplay='true' >
+
+            <source src="Ảnh/bài hát lời hứa chưa trọn vẹn.mp3" type="audio/mp3">
+
+     </audio>
+    </div>
+  -->
+
+
+
+
+
+<!-- 
+        </article> -->
+  
+
+
+</div>
+
+
+
+
+<!-- phần cạnh bên aside    ----------------------------->
+
+
+
+
+
+   <div class="aside">
+ 
+      <aside>
+  
+         <p>ĐĂNG KÍ NHẬN MAIL</p>
+         <input class="input" >
+         <button>Đăng kí</button>
+       
+
+
+      
+
+
+
+      </aside>
+
+   </div>
+
+
+
+
+   <div >
+    <footer>
+    
+        
+        <p>TÊN SINH VIÊN</p>
+
+    
+
+
+    </footer>
+    </div>
+
+   
+
+
+
+
+
+
+    
+
+
+</div>
+
+    
+</body>
+</html>

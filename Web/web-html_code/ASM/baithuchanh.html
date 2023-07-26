@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lap 3</title>
+    
+    <style>
+        
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+.container > header{
+    width: 100%;
+    text-align: center;
+    background-color: #3D0624;
+    min-height: 200px;
+}
+
+
+
+
+
+.menu>ul>li{
+    display: inline-block;
+    position: relative;
+}
+.menu>ul>li>a{
+    display: block;
+}
+.menu>ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 3px;
+    background-color: purple;
+}
+.menu>ul>li>a{
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: larger;
+    color: white;
+    padding: 0 75px;
+    line-height: 40px;
+}
+.menu>ul>li>a:hover{
+    color: white;
+    background-color:#3D0624;
+}
+
+.container > article{
+    min-height: 400px;
+    width: 75%;
+    background-color: white;
+    float: left;
+}
+h1{
+    text-align: center;
+    color: palevioletred;
+}
+.box{
+    border: 1px solid gray;
+    width: 25%;
+    float: left;
+    margin: 45px;
+}
+.down{
+    display: flex;
+    color: white;
+    background-color: #3B0423;
+    margin-left: 80px;
+    margin-top: 20px;
+    width: 130px;
+    margin-bottom: 20px;
+}
+.hehe{
+    margin-left: 20px;
+}
+.image2{
+    margin-left: 100px;
+}
+.image3{
+    margin-left: 60px;
+}
+.image4{
+    margin-left:85px;
+}
+h3{
+    text-align: center;
+}
+.center{
+    text-align: center;
+    color: purple;
+}
+del{
+    margin-left: 100px;
+}
+.down:hover{
+    background-color: aqua;
+}
+/* áide */
+.container > aside{
+    width: 25%;
+    height: 700px;
+    float: left;
+    background-color: plum;
+}
+h4{
+    margin: 30px;
+}
+.boxsearch{
+    margin: 30px;
+}
+.box-search_input{
+    display: flex;
+    width: 300px;
+}
+.box-search_bt{
+    background-color: black;
+    color: white;
+    width: 100px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 95px;
+}
+.container > footer{
+    
+    line-height: 50px;
+    background-color: palevioletred;
+    text-align: center;
+    font-variant: small-caps;
+    color: white;
+    clear: both;
+}
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="Ảnh/lap31.png" alt="">
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="">TRANG CHỦ</a></li>
+                <li><a href="">NƯỚC HOA NỮ</a></li>
+                <li><a href="">NƯỚC HOA NAM</a>
+                <li><a href="">VALI</a></li>
+                <li><a href="">TIN TỨC</a></li>
+                <li><a href="">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+        <aside>
+            <h4>ĐĂNG KÍ NHẬN MAIL</h2>
+            <div class="boxsearch">
+                <input class="box-search_input"placeholder="Gõ Email vào đây"/>
+                    <button class="box-search_bt">
+                        <p class="login">Đăng kí</p>
+                    </button>
+                    
+            </div>
+        </aside>
+        <article>
+            <h1>  HOA BÁN CHẠY NHẤT</h1>
+            <br>
+            <hr width="70%">
+            <div class="file">
+                <div class="box">
+                    <img class="image2" src="Ảnh/SP1.png" alt="">
+                    <h3>NGUYỄN QUANG HUY</h5>
+                    <p class="center">895.000 VNĐ</p> <del>1205.000 VNĐ</del>
+                    <button class="down">
+                        <p class="hehe">ĐẶT HÀNG</p>
+                    </button>
+                </div>
+            </div>
+            <div class="file">
+                <div class="box">
+                    <img class="image3" src="Ảnh/SP2.png" alt="">
+                    <h3>NGUYỄN QUANG HUY</h5>
+                    <p class="center">1.895.000 VNĐ</p> <del>1.805.000 VNĐ</del>
+                    <button class="down">
+                        <p class="hehe">ĐẶT HÀNG</p>
+                    </button>
+                </div>
+            </div>
+            <div class="file">
+                <div class="box">
+                    <img class="image4" src="Ảnh/SP3.jpg" alt="">
+                    <h3>NGUYỄN QUANG HUY</h5>
+                    <p class="center">2.895.000 VNĐ</p> <del>2.999.000 VNĐ</del>
+                    <button class="down">
+                        <p class="hehe">ĐẶT HÀNG</p>
+                    </button>
+                </div>
+            </div>
+        </article>
+        <footer>
+           TÊN SINH VIÊN
+        </footer>
+    </div>
+</body>
+</html>

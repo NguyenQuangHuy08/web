@@ -1,0 +1,80 @@
+
+
+.image{
+
+   margin: 0px;
+   padding-top: 70px;
+
+
+}
+
+
+.image img{
+
+width: 100%;
+height: 415px;
+overflow: hidden;
+
+
+}
+
+.article{
+
+    clear: both;
+    background-color: pink;
+    width: 80%;
+    min-height: 700px;
+    float: left;
+    border: 1px solid none;
+
+    
+}
+
+
+.article>*{
+
+   border: 1px solid none;
+   width: 40%;
+   padding-left: 0px;
+
+
+}
+
+.article>.image{
+
+    position: absolute;
+    top: 60.3%;
+
+    
+
+}
+
+.gr{
+
+   background-image: url("https://img3.thuthuatphanmem.vn/uploads/2019/09/17/background-dep-cho-ngay-tet_105955087.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position-y: 100%;
+   width: 100%;
+   height: 200px;
+   
+
+}
+
+
+.tungbung{
+
+     width: 100%;
+     background-color: orange;
+  
+
+}
+
+.huy3{
+
+     border: 1px solid none;
+     padding-left: 70%;
+     padding-top: 25.4%;
+
+
+}

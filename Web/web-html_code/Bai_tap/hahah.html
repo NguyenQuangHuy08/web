@@ -1,0 +1,103 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: MMC
+  Date: 3/14/2023
+  Time: 2:04 PM
+  To change this template use File | Settings | File Templates.
+--%>
+<%
+    String mess = (String) request.getAttribute("mess");
+    String username = request.getParameter("username");
+    String email = request.getParameter("email");
+    String pass = request.getParameter("pass");
+    String repass = request.getParameter("repass");
+    if (username == null) {
+        username = "";
+    }
+    if (email == null) {
+        email = "";
+    }
+    if (pass == null) {
+        pass = "";
+    }
+    if (repass == null) {
+        repass = "";
+    }
+%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/BaiTap_war_exploded/css/plugin/bootstrap.min.css">
+    <%--    <link rel="stylesheet" href="/BaiTap_war_exploded/css/custom/style.css">--%>
+</head>
+<body>
+<div class="container pt-5">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="loginform" style="width: 600px">
+                <!-- Pills navs -->
+                <!-- <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
+                           aria-controls="pills-register" aria-selected="false">Register</a>
+                    </li>
+                </ul> -->
+                <!-- Pills navs -->
+
+                <!-- Pills content -->
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="pills-register" role="tabpanel"
+                         aria-labelledby="tab-register">
+                        <form method="post" action="/BaiTap_war_exploded/sign-up/form">
+                            <!-- Username input -->
+                            <div class="form-outline mb-4">
+                                <input type="text" id="registerUsername" class="form-control" name="username"
+                                       value="<%=username %>"/>
+                                <label class="form-label" for="registerUsername">Username</label>
+                            </div>
+
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <input type="email" id="registerEmail" class="form-control" name="email" value="<%=email %>"/>
+                                <label class="form-label" for="registerEmail">Email</label>
+                            </div>
+
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                                <input type="password" id="registerPassword" class="form-control" name="pass" value="<%=pass %>"/>
+                                <label class="form-label" for="registerPassword">Password</label>
+                            </div>
+
+                            <!-- Repeat Password input -->
+                            <div class="form-outline mb-4">
+                                <input type="password" id="registerRepeatPassword" class="form-control" name="repass" value="<%=repass %>"/>
+                                <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+                            </div>
+                            <p><%=mess %>
+                            </p>
+                            <!-- Checkbox -->
+                            <div class="form-check d-flex justify-content-center mb-4">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+                                       aria-describedby="registerCheckHelpText"/>
+                                <label class="form-check-label" for="registerCheck">
+                                    I have read and agree to the terms
+                                </label>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary btn-block mb-3">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Pills content -->
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+<script src="/BaiTap_war_exploded/js/plugin/bootstrap.min.js"></script>
+</body>
+</html>

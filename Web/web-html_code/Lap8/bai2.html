@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+.menu>ul>li{
+
+    display: inline-block;
+    position: relative;
+
+
+}
+
+.menu>ul>li>a{
+
+    display: block;
+
+
+}
+
+.menu>ul{
+
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 3px;
+    background-color: orangered;
+    text-align: center;
+
+
+}
+
+.menu>ul>li>a{
+
+
+   text-decoration: none;
+   font-variant: small-caps;
+   font-size: larger;
+   color: white;
+   padding: 0 10px;
+   line-height: 40px;
+
+}
+
+.menu>ul>li>a:hover{
+
+
+    color: yellow;
+    
+
+
+}
+
+.menu ul ul{
+
+    position: absolute;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-radius: 3px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 0 1px gray;
+
+
+}
+
+.menu ul ul a{
+
+      display: block;
+      line-height: 30px;
+      color: orangered;
+      text-decoration: none;
+      font-variant: small-caps;
+      font-size: larger;
+      padding: 0 10px;
+
+
+}
+
+.menu >ul>li:hover>ul{
+
+  
+    display: block;
+
+
+}
+
+.menu ul ul a:hover{
+
+     background-color: orangered;
+     color: white;
+
+
+}
+
+.menu{
+
+     overflow: hidden;
+     position: fixed;
+     top: 0;
+     width: 100%;
+
+
+}
+
+footer{
+
+   position: fixed;
+   top: 600px;
+   width: 100%;
+   height: 100%;
+
+}
+
+
+
+</style>
+
+
+
+</head>
+<body>
+    
+<nav class="menu">
+
+   <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Giới thiệu</a></li>
+        <li><a href="#">Liên hệ</a>
+        
+            <ul>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Email</a></li>
+
+
+            </ul>
+        
+        
+        </li>
+        <li><a href="#">Góp ý</a></li>
+        <li><a href="#">Hỏi đáp</a></li>
+       
+
+
+   </ul>
+
+
+
+
+
+
+</nav>
+
+<p>
+    <h1>
+Học web chuẩnhocwebchuan.com
+Trang chủ
+Hướng dẫn học 
+
+Bài tập 
+
+Tham khảo 
+
+Chuyên đề 
+
+Công cụ hỗ trợ 
+
+Search Submit
+Thuộc tính transition
+Trang chủ Tham khảo CSS CSS3 Thuộc tính transition
+
+ 
+Định nghĩa và sử dụng
+Thuộc tính transition xác định một quá trình chuyển đổi khi có một hành động.
+
+Cấu trúc
+tag {
+    transition: giá trị;
+    -moz-transition: giá trị;
+    -webkit-transition: giá trị;
+    -o-transition: giá trị;
+}
+Trong đó:
+
+-moz-transition hỗ trợ cho firefox.
+-webkit-transition hỗ trợ cho Google Chrome và Safari.
+-o-transition hỗ trợ cho Opera.
+transition có các giá trị như sau:
+
+Thuộc tính	giá trị	Ví dụ	Mô tả
+transition-property	none	transition-property: none;	Hiệu ứng của quá trình chuyển đổi sẽ không được hiển thị.
+width
+height	transition-property: height;	Xác định hiệu ứng của quá trình chuyển đổi cho các thuộc tính css, mỗi thuộc tính cách nhau bằng dấu phẩy.
+all	transition-property: all;	Xác định hiệu ứng của quá trình chuyển đổi cho tất cả thuộc tính.
+transition-duration	Thời gian	transition-duration: 10s;	Quá trình chuyển đổi mất bao nhiêu thời gian.
+transition-timing-function	ease	transition-timing-function: ease;	Xác định một hiệu ứng của quá trình chuyển đổi với một sự khởi đầu chậm, sau đó nhanh chóng, sau đó kết thúc chậm.
+ease-in	transition-timing-function: ease-in;	Xác định một hiệu ứng của quá trình chuyển đổi với một khởi đầu chậm chạp.
+ease-out	transition-timing-function: ease-out;	Xác định một hiệu ứng của quá trình chuyển đổi với một kết thúc chậm.
+ease-in-out	transition-timing-function: ease-in-out;	Xác định một hiệu ứng của quá trình chuyển đổi với một khởi đầu và kết thúc chậm.
+linear	transition-timing-function: linear;	Xác định một hiệu ứng của quá trình chuyển đổi với cùng một tốc độ từ đầu đến cuối.
+cubic-bezier(n,n,n,n)	transition-timing-function: cubic-bezier(0,1,0.35,0);	Xác định giá trị cho hiệu ứng của quá trình chuyển đổi theo từng giai đoạn, giá trị xác định chỉ có thể từ 0 tới 1.
+transition-delay	thời gian	transition-delay: 3s;	Xác định thời gian chờ đợi trước khi các hiệu ứng của quá trình chuyển đổi sẽ bắt đầu.
+transition	[property] [duration] [timing-function] [delay]	transition: height 2s ease 3s;	Đây là thuộc tính tập hợp các thuộc tính trên.
+Ví dụ
+Xem thêm ví dụ
+HTML viết:
+
+Hiển thị trình duyệt khi chưa có CSS:
+transition
+
+CSS viết:
+p {
+    background: #cc0000;
+    transition: height 2s;
+    -moz-transition: height 2s;
+    -webkit-transition: height 2s;
+    -o-transition: height 2s;
+    height: 23px;
+    width: 120px;
+}
+
+p:hover {
+    height: 100px;
+}
+Hiển thị trình duyệt khi có CSS:
+transition
+
+Trình duyệt và hệ điều hành hỗ trợ
+Yêu cầu phiên bản trình duyệt và hệ điều hành tối thiểu được hỗ trợ cho thuộc tính transition:
+
+ 	Trình duyệt PC	Smartphone - Tablets
+Internet Explorer	Firefox	Opera	Chrome	Safari	IOS	Android	Window phone
+transition-property	9
+X	4
+-moz-	5
+-o-	4
+-webkit-	3
+-webkit-	3.2
+-webkit-	2.1
+-webkit-	8
+X
+transition-duration	9
+X	4
+-moz-	5
+-o-	4
+-webkit-	3
+-webkit-	3.2
+-webkit-	2.1
+-webkit-	8
+X
+transition-timing-function	9
+X	4
+-moz-	5
+-o-	4
+-webkit-	3
+-webkit-	3.2
+-webkit-	2.1
+-webkit-	8
+X
+transition-delay	9
+X	4
+-moz-	5
+-o-	4
+-webkit-	3
+-webkit-	3.2
+-webkit-	2.1
+-webkit-	8
+X
+transition	9
+X	4
+-moz-	5
+-o-	4
+-webkit-	3
+-webkit-	3.2
+-webkit-	2.1
+-webkit-	8
+X
+Link liên quan
+
+transform
+word-break
+
+ 
+CSS
+
+ 
+Thuộc tính CSS3
+animation
+appearance
+backface-visibility
+background-clip
+background-origin
+background-size
+background gradient
+Nhiều background
+border-image
+border-rad
+box-align
+box-direction
+box-flex
+box-ordinal-group
+box-orient
+box-pack
+RESPONSIVE
+
+WEB & TOOLS
+
+GÓP Ý igam khảo
+CSS - Bộ chọn (selectors)
+CSS - Thuộc tính
+CSS3 - Tham khảo
+CSS3 - Bộo HTML/
+
+WEB & TOOLS
+
+GÓP Ý igam khảo
+CSS - Bộ chọn (selectors)
+CSS - Thuộc tính
+CSS3 - Tham khảo
+CSS3 - Bộo HTML/
+WEB & TOOLS
+
+GÓP Ý igam khảo
+CSS - Bộ chọn (selectors)
+CSS - Thuộc tính
+CSS3 - Tham khảo
+CSS3 - Bộo HTML/
+WEB & TOOLS
+
+GÓP Ý igam khảo
+CSS - Bộ chọn (selectors)
+CSS - Thuộc tính
+CSS3 - Tham khảo
+CSS3 - Bộo HTML/
+</h1>
+</p>
+
+<footer>
+
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISERUQEBIWEBUVFxYVGBUSFhUQFRUWFhgWFhsYFhUYHSggGRolHRkVITEjJSkrMi46GB8zOTMsNygtLisBCgoKDg0OGxAQGy0lICUtLS8tLS0tLS4vKy4tLS0tKystKy0vLS0tMC0tLS4tLS0tLS0tLy0tLTAvLSstLSstLf/AABEIAIYBdwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQQFBgcDAgj/xABLEAABAwEDBgoECQoHAQEAAAABAAIDEQQSIQUGEzFBUQcUIlJhcYGRktEyobHwFyNCU2JygsHSJDM0VIOTsrPT4RU1c3SiwvFjQ//EABsBAQACAwEBAAAAAAAAAAAAAAABBAIDBQYH/8QAOhEAAQIDAwcLBAEEAwAAAAAAAQACAwQRITFRBRIUQWFxkRMVIlKBobHB0eHwMkJikoIGMzVyJLLC/9oADAMBAAIRAxEAPwDcUIQiIQhMrXbmsGvt8htRE5kkDcSaKPteV2s3Dr1+EYqFtmUHvOFWj19+zsTAsRFJ2jLzjqr6mezFMJMpyH+5J+9criQsUqEptr+ju/uvbMpyDbT6pc1cbiLiIpOz5fkGs1+sA4d4xUrZcvMd6Yu9I5Q7RrCq1xIG7kRX+OQOFWkOG8YroqPY7c+M1Bp9/WNqsmT8rNkwdyXeo9XkoUqUQuWlHSl0oRF0QvGkCW+iL0hJVKiIQkqkvoi9IXjSBJpQiLohctKOlGmHSiLqhcOMDpRxgdKIu6Fw4y3pScab0oicITfjbelJxxvSiJyhNeOt3FHHW7j3DzRE6QmfHmbj3DzRx9m49w80RPEJl/iDNx7h5o/xJm53cPNET1CZf4kzc7uHmk/xNm53cPNET5CYjKcfSOxdI7bGdTgOvk+1ETpCQFKiIQhCIhCEIiEIXGeUNaSdnvREXC32sMHsG/8Asq7O4vNXY/d1J1O4uJcf/Ohc9GpUJrcSuhDWl8jmxsGJc8hoHemOcWcEVjFKCWYioZXBo5zzsHRrPrWZZYy3NaXXpnl24amt+q3UOvX0rREjhlgtK6UlkyLM9K5uOO4eav8Abs77FFhGH2kjaPi2d5x7gVETcIsn/wCVniZ9YF57w5qopRRVTHiHXTcu/CyNLNFoJ3n4O5XQcI9q5kHgd+NOoOEav56yxP3lhMR7K3vaqDRFFHKvxW12SZU/YtasGcWT7RhfdZnnZNS54qkDtIUlabC9mJFWnU5uLT2rFASFYM2s7bRYzRrtJHthfi077vNPSO0FbWTR+4LlzWQqDOgnsPr83rQriUCicZOtcFsiMtlNCKaSE+mwno2jcRgfUkuK4CCKhefexzHFrhQheGr3dSFipec1qlsrxQXo34glzsCNbSa6x76ioc4NFStkCA+O/MZfw+elcFdrqLqzEZ0yc0eI+a9DOuTcO93mtekQ8e5X+ZpzqjiPVabdS3VmQztk5o73ea9DPCTmN8TvNNIh/AnM051RxHqtMupbqzQZ5S8xviPmvQz1l5jfEfNNIh49yczTnVHEeq0q6lurNhnvL80zxO816GfUvzTPEfNRpEP4FHM051RxHqtIupbqzgZ+S/NM8TvNKM/5fmWd7vNTpDPgU8zTnVHEeq0e6lurOhwgy/NM73+aUcIcvzDO9/mmkM+BRzNOdUfs31WiXUt1Z4OEaX5hne/zXocJE3zEfe/zUaQxOZpzqj9m+q0K6lurPhwlzfMR97/Nehwmzfq8fe/zTSGJzNOdUfs31WgXUtFQBwozfq0Xe/zXocKU36rF3v8ANNIYp5mnOqP2b6q/US0VCHCrN+rRd7/NJ8K036tF3v8ANNIYnM031R+w9Vf7qWiz/wCFSb9Wi73+aT4U5v1WLvf5ppDE5mm+qP2HqtCupbqzz4U5v1aLvf5o+FOb9Wi73+aaQxOZpzqj9m+q0S6kMQOxZ7HwoyfKszD1OLfbVTOTuESyPIErJLOd5GkZ3jlf8VIjsOta35Km2CuZXcQe4EnuVpja5uLHEdGxPLPlLG7KLp37P7JrZLVHKwSQyNlYdTmEOHVUbV1dGDgcVtXPusUsClUNDO6E0PKZ62qXY4EVBqCiL0hCEReXuoKqKtTy49XtTq2yYhg6z796b3ERNbigc7cvixxcmhlfUMBxDRte4bhu2ntVhtcrY2Oe83WtBcSdgAqT3LDs4MqOtM75nYXjgOa0ei3sHrJO1aY8TNFBeV0cmSWkxel9Iv24D1TK1Wh0ji5zi4uNSTiSTtJT/N7IM1sl0UN0Gl5xc4NAbWlaazjhqK75o5AfbbQIhVrBypHD5LRu+kdQ79QK2PKObzNBGyygQSWflQObgWu2hx1lr9Tq1rWpqqkOEXCurxXopzKEOWIhCwkX3huBIv7L6W23HN84uDyaywmZkgnAFZAGljmjaQK4tG3VTXTXSmUX0NkHKYtMIe4XHAujljPyJGYOYQe/qIWLZ5ZIFmtkkTRRhIez6rheA76j7KyisaAHNuKxyXPRYr3QY/1t3WjXdZYcLxbqqoazwOe5rGNLnOIDWjWXONAB2lSOUc27XAL00D2tGtwbeYPtt5PeU0sEMrpGiBrjJWrREHOdVvKqANopXDVRWOyZ45Rsr7kr3OprjtDXE063Ud2rSM3WulF5YEclmnEEkHsIrT+QoqgkIWjGx2LKrTxdosdsALizAMk2kigx+sACNoOCoVtsj4nuikaWOabpa7WD74121BWRbS3UsIEwIpLSC1wvabxt2jAjuXbIuVpbNK2aF11ze5w2tcNrT74gFbDYLfHa4RaYsK4PZtY8awffGoO1YeQrRmFlzi9oDHH4uWjHA6gTqPYTTqJWcGJmOpqK5mV5ARYfKNHSHeMPTbZrWl3FF5w5KE8DmHXradzxqP3HoJU86NeHR1FF0CARQrybHuY4OaaEWhYM9hBIIoQSCDrBGBC8qyZ95P0VpLgKCUXvtCocO+h+0q2uW4ZpIK+gS8YRoTYjbiK+o7DYhCEKFuQhCEUIQhCIhCEIiEIQiIQhCKUIQhEQhCEUIQhCIhCEIiEIQiIQhCIn2ScrzWZ+khe5h20xaRucNRHWtazQztjtguuAZM0VcyuDvpRk6xvGsdOtYuutmtD43tkjcWvaahwwIIWyHELDZcqE9k+HNNtsdqd64jw1L6KugjeCuVkeYn6M+i70TuKicz8vttcAfgH+jI0bHgbPokYju2FTlpgvNI26x1roAgioXi4kN0N5Y8UIsKkEJrYJr7ATrGB6whSsE2Yb0rzu5Pv3Fd7i4ZHILXuO15+7zT+6ERUHhOyho7NogaGVwafqt5TvXdHasiV94WLRWeNm6Mu8TnD/AKhUILnxzWIdli9hkWEGywOJJ+dlFqfA1aW3LRHQB4cx5O1zaFvcCCftrTFhPBzlPQW+Op5MvxJ+1Sh8Qb61uysy7qspguNluCYc0XanAHyPhXcQqsLTHZbdPpHiOOWFtoq4hrQ9jtG6nSQWHpqsrzvywLXanytBDBRrK4G6BgT0k1PbRO+EK3SSW6VkhwjdcY3YAKEU6dpPT0BVwKpFiV6IuqV6HJsgIYbHcauLWjYBQd5AFfepc5MtksMglgLmyNrRzQHEClDUEEEU3hW6wZ8NnAgynC2aM4Xw0Ne0nC9Qe1t0jZXUq7m/l2WxyGWGhq2hDhfaRUHYQdY2FWyeCDK8D5Yo2w2yMXnNbqlG2gwqScKnEEgE0IKhmdcDbhj5dhWc82HnB0eH0bBygNrTtsBArcakVvCgs5833WF7LVZXl0LyHRyNOLXekAXDbTUduKl8uNblPJ/HmtAtNnAbM1uF5oFSabh6Q3csY0XjMC1i0RzZLnNWPa50RdiWvFK0HXR4G9p3prwd2l0GUHWSUUEgfE9p1Bzb1K7zVpb9tZtoaUud3H2s7LFXi8o0OzrYkG0G7OYbTWmIBBp9wBF6pBSsOKkMvWHi9plh5kjmi9uDsD2ih7VGlaV06hzai43LcM1rdxiyxSE1cW0d0uYbrj2kV7VKXFTeC6cmFzDskNOpzGn2gq+XF04TqsBXgJqGIcZzBqPdq7lnfCdYqxNlAxY8eFwofWAs0WzcIUFbHL9QHwuB+9YyqkwKP7F6fIT6ypbg4+R8SUjt/WtGs2Y1jNibaCJL5s4krppaXjHerS9TXsWcP1e+5bbYRXJzAMfyVv8AJC8zl2PFhCHybiKk3Eit2Cxyw9zczNJH1XEjDBYodvWprM3JMVrtYhmvXNDK+jXOj5TXwgYtIOpzlEmB/wA3Lr+Zl/ArRwaQvFvqWPaNBMKvZJGKl9nwq4a8D3Lo5TjZstELHUNLKG2/ZsVufmIZgvzHiuwit4wK8Z+ZvQWN0Is4IEglLr73SVuGKlLxNPScqsr9ws+lZuq0e2BVDIuR57XKYbOAC2hklfXRxA6q09Jxxo0eoYrVk6Y/4LYsZ2o1JNfuOu/Z4LGUjthygfEON9pvPaUwQtGg4MIro0lrtDnbTG2CJpPQ0xuIH2iojODMKWzsMsDzaWNxc1zQJmgbQGCkm3AAHdVRCyzKRH5gd2kUB7fWiMypAcaGo30p3EqnvdQV17aDEnoCsrszJ47K+1WpwiLWgsgjo92Lmisr9W08lvRytib5o5BFtmdG6R0TWsEnIDTeN5uBqNXUtay1k0WmB8DnFgeALzaEihDsK4bFWynlTkIzITTShBfZqsNm8E1pbtVXKE45kYQ2kgCmdt103U1WLD7HCHzwxOqGyTQMdQlpLXzNaQCMRgSrpnjmjZbLZ9NAHh99raukkkFCHVwcSFEZVyILHlGywCR0oMtjlvPDQavtRbTkilOQO9XXhM/Qv2jfY5a5idL5yXMJxzHUstFekQajsURpjlJmC5hNDm2fzOq5U3MLN6C2STCcSOEbIC2698dC8y3q3SK+i1Ns8skxWW0aGEEMEbH0c5zzUl1cXY/JCXM/Nttukla+V0QiZERcEb66QyA1vg8wd645z5GbZJ9A1xkF1r7zmtaauvD5OHyVdY8aeW8oa0HQoc36RbWtNt15W6E4GeLc467NV2/Vf9Kh0K45PzGElgZbGzSSSPs4mEQbFdL3R3wwG7WlcNad5M4NbzAbZaHse7HR2XRhrei/IxxeekAfejssyjQTnGzVS07vg42LPnaBStDw96d9dioaFcM5sxnWaMzwyumjbS+JA3SNGq8XMADhqrgKYnFVGGJ73sijYZJJDdZGMC869Z1AAEk7ACrsvMwo8PlGGzXqprNdw13bVahTcKJDMQGgF9dW/wCbAvKFfsn8GYuB1rtbw/aLOI2Rt6L0jHF3Xh1BcsscHL42F9lmdPQVuTBokd9V7WgE9BGO8Ki3LUmX5md20s9eIHC1Vm5VgF1DUbSLPFUZCWnvqSLqrpIQhCIhCEIis/B7lUwWsMJoyajD9bAtPXX+IrcITeaDvXzXFIWua9uFHNI62mo9YX0Zkee/GHDbRw6nAFXJZ1QW/LV5fL0ENiMij7gQd49j3JbNyJnN2OF4e/f3ISW912Rj+gj370KyuCm2Qn/FfaPsCkQ9Q+SHUMrObIfL7lI3kRZHwpD8rH+i3+KRUwLQ+Fmy/GQy01hzCfqG+B/yd3LPAudF/uFe1yQ4GVZTb4ldGnat9zNyxxuyRyk8och43SNAJ7wQ77SwEK3cHWcPFbQGSGkUtGurqDvku7Cceh1VMGJmOtuU5WlDMS/RHSbaPMdt+8Aa1OcLGRSHttjBg+kclOc0EtcetuH2elZ4F9EZUsDLRE+GUVY8UO/oI3EGhB6Fg+XckyWSd8MmzU6lA4HU4dB9RBGxJiHmuzhcVryFPCLC5F31Nu2t9ruG1MlZODaYtyjE0GgeJL2yvIJA7wD2KsXkErQ05pBXYjwxFhOhn7gRuqKV7FbMjODcuDRejxiUCmq6XSNw6Lq8Wxobl3k/rUZw3mRpPrLlW7FbHwyNlhddew1DwAaGlNRBBwJGKcWHKhbbGWqeshErZn6g4kPD3U2VrswGzBZZ3Rptqqr4Ds8v1cnm7Sak+29SXCUwDKU9NujPfExVYqWzmyoLVa5LQAQHuBDXUqA0NaK0wrRoUSpcauJ2lTLtLIDGuvDWg7wAtK4JweX9Zvqa5aYWKg8FVmuxXz8pznDqAbH7by0O+r8H+2F4mfdnTMQ7fCxVXP0Uskv+m/7lhpW08J9ou2OSm0Nb4ntJ9QKxZV5n6huXfyA0iA44u8h6rzJq99y3PIsoZYoHnU2zxuNNwjBWGSavfctssX+WM/2jf5IXk/6iuhb3eSZZNAz+Xkos8Idk5k3hZ+NPciZ3We1S6CMSB1x0nLDQLrSwHEOOPLCxymPaVaODH/MB/t5/47Mk/kWWl4D4jM6ouqRiBgspzJsKDCc9pdUYkYgYKX4WPTsvVP7bOp7g8sTYcnRP2zDjL3bSZeUK9TbrfshQHCweXZeqf22dT/B/bmzWGOPC9CNC5u4M9HvZdPfuVGOH81QaXVNeLqefcqccO0OERdV3HV5rNMp5bmtEhne5wq6obedSMVwa0DVQUx261o/B3leS0WZzZnF7oX3A92LnMLGuaXHa7Eius3QTiVm+V8izWaQxOikdQ0aWRvkEja4FhaCKkaxrC0fg5yPJZ7K504uPmfpLh1xsDWta130qAuO69TYujll0robQyl4zaUu8aUv20rarE++WMFoh0rZdfSltffWqDnXZRBbZWMwbfa5tDSgeGPIFNQBcRToC03PjCwT0wwb/ABtWWZz5TbPapp2nkFzbp2XI7rA7qLW3u1atnlC59inaxrnuughrAXON1zXGjRiTQHAYla57OBk+UvFK1/hWvmtU0M0wc7qivZj2XrIMlu/KrNWh/KbN/PiWncJn6F+0b7HLNbBZ5GWmy6WKSEm02UgSxvicRxhgrddQ0Wk8Jn6F+0b7HLKfc12UZctNRZd/sVvmnNdOQi2lOjdTrnBQPBJ+etf+nZ/baEz4S/039nF7ZE84JPz1r/07P7bQmfCX+m/s4vbIsoP+adu/8tWUH/Int/6q9ZoPu5MsjjsssB7omlY5bLXJI8zSOrIeWX3nXg6t4Fh1tDTqA1UFFr+bH+U2b/ZxfyQsZOr33LD+nmtMSKaW1A7CXVHbS3FYZHY1xeSMBxrXjRbVbJdNkt73iuksjnOH14STq61TOCuxB1pnncKmNjGN6NKXOcab/i48ekq3w/5SP9iP5CqPBba2tnlhJoZWtc3p0RdUddJK0+gVzpQHQZnN/HhW35gqcCuiRafh5qQz8yLbbVM0QsEkLGig0jIwJCXXnFp1mlBXZjTWVIcH+T7XZ2yQ2plyMFpiF9stK3g9ooeS3BhA6SmGftot0EolgfJoXNA+Ka59x4qCHBrSQCLpB3kjdVnkGz5XtURmFpdZhWjGzxuDngCt/YWtrgKjGhO6tmj3SDWOfCDNX1ZwNdlbcbLtlChzjAaC9mbW63OG+jSe/CmoKEz7sQitsl0UD6SUG94Jce1149qr6kcuyTad7Z5BNIw6MvY4uabpIoKgajfBw1g61HL0ko0tl4YJr0RaNYpZevQygIgMBNbBbbdqvAN2ICEIQrCsIQhCIjd1hfQma9RZ4wfm4v4AsCsNmMsrIm63ua0drgPvX0Pk2O6wAatnUMPuVqWF685/UDhSG3/Y+C85U+T2/chdZReka3oKFbXnFFyfF2x7dkjQ4dY/8cnt5N86ISGsnbridj9U0++neUkUwcA4aiKjtUqFD595N09jfdFXRUlbv5IIcPCXdwWLkUK+hGvWP58ZvmyzktHxUlXsOwDazrbXuIVOaZbnBehyHNAEwXbx5jz4qugr2CuQK9AqqvUArYuDbOcTxcVld8bGKNJ1yRj2ubgDvFDjipjPHNpltipgyVlTG8/wu+ifVr6DhtjtT4ntljJa5pDgRrBHvq2rccz8547bFUENlaBpI/8As3e0+rV12oLw9uY757rzGUpR8rF0qXsFan8T6HuNQbKLG7bkW0Qy6B8Tw8mgaGFxds5NPSHVVWfNDMmO1Nc6ae64Eh0TABK2hp8YHjk4g4UPXsWwqDy3kMTETRO0FoZ6EzcD9STnMOqh/wDY0bNtv2XLJ2XXxW5n9sn7hbbupYN1XAXVuWe51cHj4GOmszzM1oqWuAD2ga3C7g4dFAetUElfQmQMqGdhD26KaNxjlZueNrd7HawfbRZBwh5HZZra5sdAx7Wyho2Bzngt6gQ6m4EDYsIsNoAc24q5k2fixIjpeY+oWg48LDfUHWMbK1gr3Z4y5wDRUkgAbycAFzV0zAyGZJNO4YNNG12u2nqaPWehamtLjmhXp2ZbAhF57NpwWjZq2EQQNZuAbXfTWe1xKmrybMoAANQwXsuXUpSwLwRcSalZ5wt27kRwjW5znnqaC0V6yT3LM1PZ75U4xa3uaasZ8U3pa2tT2kk9oUCudEdnPJC9zk2ByMsxpvvPbb3Cg7EferlFn6W2YWbiwNIhFe0p2MuVpo+2lVTUKnMSkGYA5VtaXWkeBC3RpaHGpygrSusi/duQdZUnm3lg2S0cYEYkOjdHdLtH6RjdWt08zVTaoxC2xYbYrSx4qDf8FFsiw2xWlr7ip7OrOQ24xExCLRCQYPMl6/c+i2lLnTrTDI+V5rLJpIXXSRQgi8x4Gx7Kiu3HAipoRUpghYMloTIXIhvQwvF9ddt9t9mq4LBsvDbD5MDo4G355LQrLwlYfGWajt7ZKA9jm4etQecWek9qaYg0QxuFHNaS9zxtDpCBVp3ADpJBoqyhVYWSpSE/Pay3eT3EkcarQzJ0u12cG8SafN9UOFdeo4K9ZH4Q3NjayePSloA0jHXC6mFXNIpXeQcdwVFQrEzKQZkARW1pvBHBbo8tDjjpi7irBl7OU2m0w2jRBmhdG4Nvl17RSiWhddF3VTUde1Os4883WuHQ6DRcoG8JDJqDhSlwb96qqFrGT5YFjg21n02my2uNtprbXhSmAkoILTT6brTjXHE1U3mpnEbC6VzYhLpWxjF5ju6MvPNdWt/o1LjnFlo2uYTmMR4NbdDtJ6FTWt0c7copC2tlYTYxjhvTOu3wrTUNSzEtDETlQOlj3XXK4ZOz6dDZI7ILOHCKFkV/SkVutDL13Rmm+lVT6IQol5WDL1MJtK32k3VpeTipgS0OBXkxSu/VWl+9W9ufThZOKcXH5jQX9KeZcvXdH20r2qqwTOY8PYSwtcC0twII2hckKJeTgS4IhNpW+814k4lRBlYUEEMFhvvOONcSr5k7hHeGgTxB5Hy43aOvWzlY9R7Am+WOEOWRpZAwQVwLy7SPp9HUGnpx+9UtCrjJEmHZ3JjiacK08ti0DJsuHVzeypp87t6Un31pEIXRV5CEIREIQpDIuSZLVKIoxrxLj6LRtJ98UUPe1jS5xoBeVZODTI5knNoIwjwb0vIp6gSfCtgYKAAbFF5v5JZZoWxMGDRgTrJOJceklSErsKDWcF0YTMxtF4aemtJjGJquG73vO0r3YhVzn9g9+5CcQsutAQtippZow5pa4VDgQRvBwVRstYZHWZ+zFhPymnH37VclD5wZL07A5mErMWHVX6JPv7URNLy45TyfFaoTZ5sAcWvGtj9jh741I2prYbZfBDhde3BzTgQRhqTq8hAIoVLXFpDgaELHcv5DlskpilbQ62uHoubzmn7tiiwVutsghtEehtDNIzYflMO9rtYPviMFn+cHB/NFWSzflMf0B8a36zB6X2e4KhEgObdaF6qQywyIAyLY7uPz5spYKd5NyjJBI2aF5a4aiPWCNoO0JtJEQSC3EYEaiDuI2LwtAXbqHCl4W6ZoZ4xW5oaaRzgcqOuBI1mM7R0ax61ZpZWtBc5waBrLiAB2lfM7JCCHNJaQaggkEEbQRqK9z2mSQ1kc553ue4nvcrTZlwFoXBjZBY6ISx+a3ClabBaPmK1HOHPGCy2szWYttLnxGORjHUYHsIMby4CjjQuGB1AalmuVcpS2mZ08rrznHHYABqa0bGj3xXGz2Z73BrGlzjqa0FxPYFccg5jucQ+08gfNtPKP1nDBo6sepaqvimg9lZrK5PbVx6VKV+4gXXcNwFSobNrN99pftZGDi7/q3e72eo65k2xthYGMAaAAABsA2LnY7MyJoaxoaAKAAUAHQnF5XYUIMG1eanZ180+psAuHzX4JxeVfz6y5xWykA0klqxu9o+U/sBw6SFYrLCTyqYbBvVTy7mdJa5jNMHkkANbpI7rGjU0YdZ6yVlEzi2jVrlDBEUOjfSLaX1wG7HZZeVkSFpw4NBud+8j/AAr0ODRu5/7yP8Kp6O/ZxXp+fJX8uHusvQtRHBpHuf8AvI/wr0ODSP6f7yP8KaO/YnPkr+XD3WWIWqjg0i/+n7yP8K9Dg0h/+n7yP8CaO/ZxTnyV/Lh7rKELWBwZwb5f3kf4F6HBlZ98v7yL8CaO/ZxTnyV/LgPVZKha4ODKzb5fHF+BKODOy86bxx/gTR37OKc+Sv5cB6rIkLXxwZWPnTeOL8C9DgxsXOm8cX9NNHfs4pz5K/lw91jyFsQ4MbFz5/HH/TSjgxsPPn8TP6ajR3/Cp57lMTw91jiFsZ4MbDz5/FH/AE0nwZWHnz+KP+mmjvTnuUxPD3WOoWw/BlYefP4o/wCmk+DKxc6fxx/000d+zinPcpt4e6x9C2D4M7Fzp/HH/TSfBnYt83ji/ppo79nFRz3Kflw91kCFr3wa2LnTeOL8CT4NLFzpvHF+BTo79ic+Sv5cPdZEha58Glj503jj/Ak+Dayc6bxx/gTR37E58lfy4e6yRGOwVWus4OLGNkj/AK0jfuYFM5NzXssFNHExpG2he7sc+tFIln66LXEy9AA6LXE9gHGp8FlmQMzrRaSHOBhj5zwWkj6LdbuvAdK1fIGQYrNGGRtptJOLnHe87erUFKMYBqXpWIcJrLr1wpzKEaasdY3AXdus+GAC9Fy6WaL5Z7EsMG13d5pytqooQhCIhCEIigMuZGMh00HJlHYHjcenp7D0Q1mtl4ljxceMC04GvQrwovK2Ro7QKu5Lxqe3WOvePfBEULfXuKdzTVpoehM7VZ57P+dbpGfOMxw+lu7e8rzFaWu1Gvt7lKhPbdHBP+k2eOY6r1Lrx1OGI7CFC2jMvJ7/AERLD0Nc0j/mHFSV5LfWDobHXhbocxFh2McR2lQRzDsnz03/AA/AnEGZ1iZ8l8n13U9TLqlr6W8seRhjUFsM7MG95408F6stmjiF2KNsY3MAbXrprXYOTe+usbCf7raLFWJqaldLyeWaAUvym63cdZXaxZP2nvP3BSD7Ow+k0OpzgD7VCJuLfFscO4+SP8Qj547j5LvxSP5tnhHkjikfzbfCERcOPx871HyRx2Pne3yXfisfMb4QjisfMb4QiLhxxnO9qONs53tTjizOY3whHFmcxvhCIm/G2c72peNM53tXfizOY3whHF2cxvcERcOMt3+1Lxhu/wBq78XZzG9wRoWc1vcERcNO3f7UaZu9ONC3mjuCNC3mjuCIm2lG9GkG9OdE3mjuCNE3mjuCImukCW+nOibzR3BGjbuHcERNqoqnVwbh3IuDcO5ETZFCnNwbh3IujcERNrpSXDuTu6NyLo3IiaaM7kaJ25PKJURMtGdyS4dyfJKIiY3DuXoRlO7o3L0iJq2zld2RAL2hEQhCERCEIREIQhEQhCERCibbkKCQ+hcdvj5Pq1HuSoRFGvzckH5uavQ8U9Yr7Ewns0jMHFp6q+SEKUXBkpKkrNk979re0nyQhFCk4ci09J3hH3lSMFlazUMd5xKEKFK7oQhEQhCERCEIREIQhEQhCERCEIREIQhEQhCERCEIREIQhEQhCERCEIREIQhEQhCERCEIREIQhEQhCERCEIRF/9k=" >
+
+
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+body{
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.container{
+
+   max-width: 1200px;
+   margin: 0px auto;
+
+}
+
+header{
+
+   background-color: #FF4500;
+   height: 100px;
+
+
+}
+
+header >img{
+   
+    margin-top: 10px;
+    margin-left: 20px;
+
+
+}
+
+nav{
+
+   background-color: #26324F;
+   height: 50px;
+
+}
+
+nav > ul {
+
+    margin: 0px;
+    padding: 0px;
+ 
+}
+
+nav > ul > li{
+
+    display: inline-block;
+
+}
+
+nav > ul > li > a {
+
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+    margin: 20px;
+    font-weight: bold;
+    color: white;
+
+}
+
+.tc{
+   
+    position: absolute;
+    float: right;
+    right: 200px;
+    top: 115px;
+}
+
+
+input{
+   
+    width: 300px;
+    height: 20px;
+    margin-right: 20px;
+
+
+}
+
+
+
+button{
+
+    border: 1px solid red;
+    background-color: #26324F;
+    color: white;
+    width: 100px;
+    height: 27px;
+    margin-right: 7px;
+
+
+}
+
+.banner > img{
+   
+    margin-top: 15px;
+    width: 100%;
+
+}
+
+h2{
+
+   color: red;
+   text-align: center;
+ 
+
+}
+
+.khung{
+
+   border: 2px solid red;
+   height: 450px;
+   width: 30%;
+   float: left;
+   margin: 18px;
+
+}
+
+.khung > .tren{
+    
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 410px;
+   
+
+}
+
+.khung > .tren > a{
+
+    text-decoration: none;
+    list-style: none;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+
+.khung > img{
+
+   margin-top: 30px;
+   width: 90%; 
+   margin-left: 16px;
+
+
+}
+
+.khung > p{
+
+    width: 330px;
+    margin-left: 10px;
+    font-size: 17px;
+
+}
+

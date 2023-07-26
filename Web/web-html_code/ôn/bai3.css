@@ -1,0 +1,167 @@
+body{
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.container{
+
+  max-width: 1200px;
+  margin: 0px auto;
+
+
+}
+
+
+header{
+
+ 
+   background-color: #DA7400;
+
+
+}
+
+
+
+nav{
+ 
+   margin-top: 1px;
+   background-color: #BE3E00;
+   min-height: 40px;
+   overflow: hidden;
+   
+
+}
+
+nav > ul{
+
+
+   margin: 0px;
+   padding: 0px;
+  
+}
+
+nav > ul > li{
+
+    display: inline-block;
+   
+
+}
+
+nav >ul>li>a{
+
+   display: block;
+   margin: 20px;
+   text-decoration: none;
+   float: left;
+   color: white;
+   font-weight: bold;
+   text-transform: uppercase;
+
+
+}
+
+nav ul li:hover{
+ 
+   text-decoration: underline;
+   background-color: red;
+
+
+}
+
+.input{
+
+    width: 300px;
+    min-height: 22px;
+    position: absolute;
+    top: 220px;
+    left: 950px;
+
+}
+
+.button{
+
+   position: absolute;
+   top: 220px;
+   right: 210px;
+   width: 100px;
+   height: 30px;
+   background-color: white;
+
+}
+
+.banner > img{
+
+   width: 100%;
+   margin-top: 10px;
+   
+}
+
+
+.footer{
+  
+   clear: both;
+   background-color: #26324F;
+   text-align: center;
+   color: white;
+   padding-top: 6px;
+   height: 50px;
+   padding-bottom: 3px;
+
+}
+
+.cangiua{
+
+   text-align: center;
+
+}
+
+
+.box{
+    border: 1px solid black;
+    width: 28%;
+    float: left;
+    margin: 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.image2{
+    width: 100%;
+}
+.to{
+    color: brown;
+    font-size: 24px;
+}
+.nho{
+    opacity: 0.8;
+}
+.haha{
+    color: brown;
+    text-align: center;
+    background-color: cyan;
+}
+h3{
+    background-color: darkblue;
+}
+
+/* footer{
+   clear: both;
+   background-color: #26324F;
+   text-align: center;
+   height: 50px;
+  
+
+} */
+
+footer{
+   
+    clear: both;
+    background-color: #26324F;
+    text-align: center;
+    color: white;
+    padding-top: 6px;
+    height: 50px;
+    padding-bottom: 3px;
+
+}

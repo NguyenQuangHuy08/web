@@ -1,0 +1,172 @@
+body{
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.container{
+
+  max-width: 1200px;
+  margin: 0px auto;
+
+
+}
+
+
+header{
+
+ 
+   background-color: #26324F;
+   border: 1px solid red;
+   max-width: 650px;
+   float: left;
+
+
+}
+
+header >img {
+
+width: 100%;
+height: 500px;
+ 
+
+}
+
+header >p{
+ 
+   font-size: 20px;
+   font-weight: bold;
+
+}
+
+.benphai{
+
+   float: right;
+   border: 1px solid red;
+   background-color: aqua;
+   max-width: 500px;
+
+}
+
+.benphai >img{
+
+   height: 340px;
+   width: 500px;
+  
+
+}
+
+/* 
+.two{
+   
+   padding-top: 10px;
+   clear: both;
+   background-color: #26324F;
+   border: 1px solid red;
+   max-width: 650px;
+  
+
+}
+
+.twotrai{
+
+  float: left;
+  border: 1px solid red;
+ 
+
+}
+
+.twophai{
+
+  float: right;
+  border: 1px solid red;
+ 
+
+} */
+
+
+.two{
+
+
+padding-top: 40px;
+clear: both;
+max-width: 650px;
+
+
+}
+
+
+.cot{
+   
+   
+    border: 1px solid gray;
+    width: 48%;  
+    text-align: center;
+    height: 230px;
+
+}
+
+.cot img {
+
+    width: 100%;
+    
+
+}
+
+.trai{
+    border: 1px solid red;
+   text-align: center;
+   float: left;
+   height: 400px;
+ 
+
+}
+
+.phai{
+    
+    border: 1px solid red;
+    float: right;
+    text-align: center;
+   height: 400px;
+}
+/* 
+hr{
+   
+    border-style: dotted;
+    clear: both;
+    width: 70px;
+ padding-top: 10px;
+
+} */
+
+
+.xong{
+   
+    border: 1px solid red;
+    clear: both;
+    position: absolute;
+    top: 440px;
+    right: 190px;
+
+}
+
+.xong{
+   
+
+    border: 1px solid red;
+    max-width: 500px;
+    float: right;
+
+}
+
+.xong >img{
+
+     width: 20%;
+     height: 200px;
+     float: right;
+     
+    
+
+
+}
